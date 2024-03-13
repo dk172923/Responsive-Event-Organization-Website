@@ -469,18 +469,33 @@ html::-webkit-scrollbar-thumb {
 
 .location{
   background-color: #333;
-  width: 600px;
+  width: fit-content;
   border-radius: 0.5rem;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 
 .location_container{
   width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
 iframe{
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 0.5rem;
+}
+
+.home {
+  width: 100vw; /* Set the width to the width of the viewport */
+  height: 75vh; /* Set the height to the height of the viewport */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  background-image: url(./images/matrix.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
