@@ -574,6 +574,10 @@ html::-webkit-scrollbar-thumb {
   .home .content h3 {
     font-size: 4rem;
   }
+
+  iframe{
+    width: min-content;
+  }
 }
 
 @media (max-width: 450px) {
