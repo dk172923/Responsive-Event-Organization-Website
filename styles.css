@@ -138,7 +138,7 @@ section {
 .service .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 .service .box-container .box {
@@ -412,7 +412,8 @@ section {
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+  gap: 1.0rem;
+  justify-content: center;
 }
 
 .footer .box-container .box h3 {
@@ -587,4 +588,19 @@ html::-webkit-scrollbar-thumb {
   .contact form .inputBox input {
     width: 100%;
   }
+}
+
+
+
+.location{
+  background-color: #333;
+  width: fit-content;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.location_container{
+  width: fit-content;
+}
+iframe{
+  margin-top: 20px;
 }
