@@ -141,12 +141,26 @@ section {
   gap: 1.8rem;
 }
 
+.nevent .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.8rem;
+}
+
 .event .box-container .box {
   border-radius: 0.5rem;
   background: #333;
   text-align: center;
   padding: 2.5rem;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.nevent .box-container .box{
+  border-radius: 0.5rem;
+  background: #333;
+  text-align: center;
+  padding: 2.5rem;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -155,15 +169,14 @@ section {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  cursor: pointer;
 }
-.event .box-container .box i {
-  height: 6rem;
-  width: 6rem;
-  line-height: 6rem;
-  border-radius: 50%;
-  font-size: 2.5rem;
-  background: var(--theme-color);
-  color: #fff;
+
+.nevent .box-container .box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  cursor: pointer;
 }
 
 .event .box-container .box h3 {
@@ -172,9 +185,23 @@ section {
   padding: 1rem 0;
 }
 
+.nevent .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
 .event .box-container .box p {
   font-size: 1.4rem;
   color: #eee;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.nevent .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  text-align: justify;
   line-height: 1.8;
 }
 
@@ -183,8 +210,26 @@ section {
   height: 150px;
   border-radius: 10px;
   margin-top: 10px;
+  justify-content: center;
 }
 
+.nevent .box-container .box img{
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .event .box-container {
+    justify-content: space-between;
+  }
+  .event .box:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
 .about .row {
   display: flex;
   align-items: center;
@@ -213,6 +258,18 @@ section {
 }
 
 .about .row .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.location .content h1{
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.location .content p{
   font-size: 1.5rem;
   color: #eee;
   padding: 1rem 0;
@@ -412,13 +469,18 @@ html::-webkit-scrollbar-thumb {
 
 .location{
   background-color: #333;
-  width: fit-content;
-  border-radius: 5px;
+  width: 600px;
+  border-radius: 0.5rem;
   margin-bottom: 10px;
 }
+
+
 .location_container{
   width: fit-content;
 }
+
+
 iframe{
   margin-top: 20px;
+  border-radius: 0.5rem;
 }
