@@ -146,8 +146,16 @@ section {
   background: #333;
   text-align: center;
   padding: 2.5rem;
+
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.event .box-container .box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 .event .box-container .box i {
   height: 6rem;
   width: 6rem;
@@ -168,6 +176,13 @@ section {
   font-size: 1.4rem;
   color: #eee;
   line-height: 1.8;
+}
+
+.event .box-container .box img{
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .about .row {
