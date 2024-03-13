@@ -2,7 +2,7 @@
 
 /* Google Fonts(Poppins) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 :root {
   --theme-color: #3867d6;
 }
@@ -449,6 +449,10 @@ html::-webkit-scrollbar-thumb {
   iframe{
     width: min-content;
   }
+
+  .home .image{
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -490,12 +494,71 @@ iframe{
 }
 
 .home {
+  position: relative;
   width: 100vw; /* Set the width to the width of the viewport */
   height: 75vh; /* Set the height to the height of the viewport */
   display: flex; /* Use flexbox to align items */
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
-  background-image: url(./images/matrix.jpg);
+  background-image: url(./images/neon.png);
+  margin-top: 60px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* Countdown Timer Section */
+.countdown-section {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px; /* Adjust margin between time elements */
+}
+
+.time h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0;
+}
+
+.time small {
+  font-size: 14px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+  .countdown-section {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .time {
+    margin: 0 5px; /* Adjust margin for smaller screens */
+  }
+
+  .time h2 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .time small {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .home .image{
+    width: 100%;
+  }
 }

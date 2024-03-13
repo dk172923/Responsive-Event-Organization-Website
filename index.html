@@ -21,7 +21,10 @@
     <!--css file-->
     <link rel="stylesheet" href="styles.css" />
 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <!-- header section starts  -->
@@ -40,9 +43,34 @@
 
     <!-- home section starts  -->
     <section class="home" id="home">
-      <div class="content">
-        <div class="image">
+      <div class="image"> </div>
     </section>
+
+    <section class="countdown-section" id="countdown-section">
+      <div id="countdown" class="countdown">
+
+        <div class="time">
+         <h2 id="days"></h2>
+         <small>Days</small>
+        </div>
+      
+        <div class="time">
+         <h2 id="hours"></h2>
+         <small>Hours</small>
+        </div>
+      
+        <div class="time">
+         <h2 id="minutes"></h2>
+         <small>Minutes</small>
+        </div>
+      
+        <div class="time">
+         <h2 id="seconds"></h2>
+         <small>Seconds</small>
+        </div>
+      
+       </div>
+      </section>
 
     <!-- about section starts  -->
     <section class="about" id="about">
@@ -72,14 +100,14 @@ Beyond the technical sphere, TecFest2k24 offers a range of engaging non-technica
       <h1 class="heading">technical events</h1>
 
       <div class="box-container">
-        <div class="box">
+        <a href="./codeclash.html"><div class="box">
           <img src="./images/coding.jpg" alt="coding event image">
           <h3>Code Clash</h3>
           <p>
             Welcome to Code Clash, where coding meets collaboration! Engage in a thrilling co-op challenge with your teammate as you tackle a series of coding puzzles together. 
             Swap roles seamlessly and demonstrate your joint skills to conquer each round. Are you ready to clash and conquer? Join us now and prove your coding prowess!
           </p>
-        </div>
+        </div></a>
 
         <div class="box">
           <img src="./images/paper presentation.jpg" alt="paper presentation pic">

@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.event-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    max-width: 800px;
+    gap: 30px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.event-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.description {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.rules-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.rules {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.coordinators-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.coordinators {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 10px;
+}
+
+.coordinators a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.whatsapp-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .event-container {
+      flex-direction: column;
+    }
+  
+    .content-container {
+      padding-left: 0;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .rules{
+        margin-left: 30px;
+        text-align: left;
+    }
+  }
+  
+
+.whatsapp-group-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.whatsapp-group-link:hover {
+    background-color: darkgreen;
+}
+
