@@ -30,7 +30,8 @@ body {
 .event-name {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: var(--theme-color);
+    font-family: 'Protest Revolution', sans-serif;
 }
 
 .description {
@@ -43,7 +44,8 @@ body {
 .rules-heading {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: var(--theme-color);
+    font-family: 'Protest Revolution', sans-serif;
     margin-top: 20px;
 }
 
@@ -57,8 +59,9 @@ body {
 .coordinators-heading {
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color:var(--theme-color);
     margin-top: 20px;
+    font-family: 'Protest Revolution', sans-serif;
 }
 
 .coordinators {
