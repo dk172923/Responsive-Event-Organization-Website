@@ -500,7 +500,7 @@ iframe{
   display: flex; /* Use flexbox to align items */
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
-  background-image: url(./images/neon.png);
+  background-image: url(./images/cover.jpg);
   margin-top: 60px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -560,5 +560,9 @@ iframe{
 
   .home .image{
     width: 100%;
+  }
+
+  .home .image{
+    max-width: 100%;
   }
 }

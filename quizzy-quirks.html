@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecFest2k24</title>
+
+    <!--swiper css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css"/>
+
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <a href="./index.html" class="logo"><span>T</span>ec<span>F</span>est2k24</a>
+
+      <nav class="navbar">
+        <a href="index.html#home" onclick="navigateAndScroll('#home')">home</a>
+        <a href="index.html#about" onclick="navigateAndScroll('#about')">about</a>
+        <a href="index.html#event" onclick="navigateAndScroll('#event')">event</a>
+        <a href="index.html#footer">contact</a>
+    </nav>
+    
+
+      <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+
+    <section class="codeclash" id="codeclash">
+        <!-- Single div containing image and content -->
+    <div class="event-container">
+        <!-- Image on the left side -->
+        <div class="image-container">
+            <img src="./images/quiz.jpg" alt="quiz Image">
+        </div>
+        <!-- Content on the right side -->
+        <div class="content-container">
+            <h2 class="event-name">Tech Quest Trivia</h2>
+            <p class="description">
+                The Solo Master, with two rounds, Where Participant who Answers Maximum number of Question within short time will be Qualified to Second Round. The Winner and Runner will be awarded with cash prize. Solo Master depends on their own knowledge. Are you ready to seize your moment and claim the title of Solo Master?
+             </p>
+            <h3 class="rules-heading">Rules:</h3>
+            <ul class="rules">
+                <li>Game is divided into two rounds.</li>
+                <li>It is a team event. Each team must have two members.</li>
+                <li>Event will be conducted on the basis of general reasoning and technical knowledge.</li>
+                <li>The quiz master's decisions are final.</li>
+                <li>No surfing of internet is allowed.</li>
+            </ul>
+            <h3 class="coordinators-heading">Student Coordinators:</h3>
+            <p class="coordinators">
+                Aruneshwaaran - 8428167880
+            </p>
+            <div class="whatsapp-group">
+                <a href="https://chat.whatsapp.com/CvD2LOkV81M9YpNgMq3heX" target="_blank" class="whatsapp-group-link">
+                    <i class="fab fa-whatsapp"></i> Join WhatsApp Group
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- footer section starts  -->
+    <section class="footer" id="footer">
+      <div class="box-container"> 
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> 9952117101</a>
+          <a href="#"> <i class="fas fa-phone"></i> 7338762412 </a>
+          <a href="mailTo:tecfestcse24@gmail.com"> <i class="fas fa-envelope"></i> tecfestcse24@gmail.com </a>
+          <a href="#">
+            <i class="fas fa-map-marker-alt"></i> Rathinamangalam, Chennai-600127
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="https://www.instagram.com/tecfestcse_2024/"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        Created by <span>TecFest2k24</span> team
+      </div>
+    </section>
+
+    <!-- theme toggler  -->
+    <div class="theme-toggler">
+      <div class="toggle-btn">
+        <i class="fas fa-cog"></i>
+      </div>
+   
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--JS file-->
+    <script src="app.js"></script>
+    <script>
+      function navigateAndScroll(selector) {
+          var element = document.querySelector(selector);
+          if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+          }
+      }
+  </script>
+  
+  </body>
+</html>
