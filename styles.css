@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 :root {
-  --theme-color: #3867d6;
+  --theme-color: #5275c7;
 }
 
 * {
@@ -17,6 +17,10 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.2s linear;
+}
+
+span{
+  color: var(--theme-color);
 }
 
 html {
@@ -101,9 +105,9 @@ section {
   margin-top: 1rem;
   display: inline-block;
   padding: 0.8rem 3rem;
-  font-size: 1.7rem;
+  font-size: 3.5rem;
   border-radius: 0.5rem;
-  background: #666;
+  background: var(--theme-color);
   color: #fff;
   cursor: pointer;
   font-weight: 600;
@@ -112,6 +116,19 @@ section {
 .btn:hover {
   background: var(--theme-color);
 }
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.flicker {
+  animation: flicker 3s infinite;
+}
+
+
+
 
 .home .home-slider .swiper-slide {
   overflow: hidden;
@@ -184,14 +201,12 @@ section {
 }
 
 .event .box-container .box h3 {
-  font-size: 2rem;
-  color: #fff;
+  font-size: 3rem;
   padding: 1rem 0;
 }
 
 .nevent .box-container .box h3 {
-  font-size: 2rem;
-  color: #fff;
+  font-size: 3rem;
   padding: 1rem 0;
 }
 
@@ -199,7 +214,7 @@ section {
   color: #eee;
   text-align: justify;
   line-height: 1.8;
-  
+  font-size: 1.4rem;
 }
 
 .nevent .box-container .box p {
@@ -210,21 +225,29 @@ section {
 }
 
 .event .box-container .box img{
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   border-radius: 10px;
   margin-top: 10px;
   justify-content: center;
 }
 
 .nevent .box-container .box img{
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   border-radius: 10px;
   margin-top: 10px;
   justify-content: center;
 }
-
+.about .row .image video {
+  /* Position the video element absolutely within its container */
+ top: 0;
+ left: 0;
+ width: 650px; /* Set the video width to 100% of the container */
+ height: 100%; /* Set the video height to 100% of the container */
+ object-fit: cover; /* Maintain aspect ratio while covering the container */
+ border-radius: 5px;
+}
 @media (min-width: 600px) {
   .event .box-container {
     justify-content: space-between;
@@ -256,13 +279,18 @@ section {
 .about .row .image {
   flex: 1 1 45rem;
   padding: 1rem;
+  position: relative;
 }
 
-.about .row .image img {
-  width: 100%;
-  border-radius: 0.5rem;
-  border: 1rem solid #333;
+.about .row .image video {
+   /* Position the video element absolutely within its container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Set the video width to 100% of the container */
+  height: 100%; /* Set the video height to 100% of the container */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
 }
+
 
 .about .row .content {
   flex: 1 1 45rem;
@@ -572,6 +600,10 @@ iframe{
   font-size: 36px;
   line-height: 1;
   margin: 0;
+  background: linear-gradient(to right,#ff5733, #e61a67); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .time small {
@@ -589,15 +621,11 @@ iframe{
   }
 
   .time h2 {
-    font-size: 24px; /* Adjust font size for smaller screens */
+    font-size: 48px; /* Adjust font size for smaller screens */
   }
 
   .time small {
-    font-size: 12px; /* Adjust font size for smaller screens */
-  }
-
-  .home{
-    background-image: url(./images/cover-mobile.png);
+    font-size: 18px; /* Adjust font size for smaller screens */
   }
 
   .home .image{
@@ -613,7 +641,7 @@ iframe{
   .home {
     position: relative;
     width: 100vw; /* Set the width to the width of the viewport */
-    height: 30vh; /* Set the height to the height of the viewport */
+    height: 28vh; /* Set the height to the height of the viewport */
     display: flex; /* Use flexbox to align items */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
