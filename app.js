@@ -8,12 +8,12 @@ menu.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-let themeToggler = document.querySelector(".theme-toggler");
+/*let themeToggler = document.querySelector(".theme-toggler");
 let toggleBtn = document.querySelector(".toggle-btn");
 
 toggleBtn.onclick = () => {
   themeToggler.classList.toggle("active");
-};
+};*/
 
 window.onscroll = () => {
   menu.classList.remove("fa-times");
@@ -21,12 +21,12 @@ window.onscroll = () => {
   themeToggler.classList.remove("active");
 };
 
-document.querySelectorAll(".theme-toggler .theme-btn").forEach((btn) => {
+/*document.querySelectorAll(".theme-toggler .theme-btn").forEach((btn) => {
   btn.onclick = () => {
     let color = btn.style.background;
     document.querySelector(":root").style.setProperty("--theme-color", color);
   };
-});
+});*/
 
 var swiper = new Swiper(".home-slider", {
   effect: "coverflow",
@@ -95,3 +95,15 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+
+
+function navigateAndScroll(selector) {
+  window.location.href = 'index.html';
+  setTimeout(function() {
+            var element = document.querySelector(selector);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+  }, 500); // Adjust the delay as needed
+}
