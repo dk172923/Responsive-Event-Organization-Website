@@ -92,6 +92,10 @@ section {
   text-transform: uppercase;
 }
 
+.home .row{
+  font-size: 2rem;
+}
+
 
 .btn {
   margin-top: 1rem;
@@ -137,7 +141,7 @@ section {
 
 .event .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 2fr));
   gap: 1.8rem;
 }
 
@@ -192,10 +196,10 @@ section {
 }
 
 .event .box-container .box p {
-  font-size: 1.4rem;
   color: #eee;
   text-align: justify;
   line-height: 1.8;
+  
 }
 
 .nevent .box-container .box p {
@@ -229,6 +233,18 @@ section {
     grid-column: 2;
     grid-row: 2;
   }
+  .event .box-container .box p {
+    font-size: 2rem;
+    color: #eee;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  .nevent .box-container .box p {
+    font-size: 2rem;
+    color: #eee;
+    text-align: justify;
+    line-height: 1.8;
+  }
 }
 .about .row {
   display: flex;
@@ -258,7 +274,7 @@ section {
 }
 
 .about .row .content p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #eee;
   padding: 1rem 0;
   line-height: 2;
@@ -453,6 +469,19 @@ html::-webkit-scrollbar-thumb {
   .home .image{
     width: 100%;
   }
+
+  .event .box-container .box p {
+    font-size: 2rem;
+    color: #eee;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  .nevent .box-container .box p {
+    font-size: 2rem;
+    color: #eee;
+    text-align: justify;
+    line-height: 1.8;
+  }
 }
 
 @media (max-width: 450px) {
@@ -467,6 +496,14 @@ html::-webkit-scrollbar-thumb {
   .contact form .inputBox input {
     width: 100%;
   }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+  
 }
 
 
@@ -519,6 +556,7 @@ iframe{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
 }
 
 .time {
@@ -537,7 +575,7 @@ iframe{
 }
 
 .time small {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 /* Media query for smaller screens */
@@ -558,11 +596,20 @@ iframe{
     font-size: 12px; /* Adjust font size for smaller screens */
   }
 
-  .home .image{
-    width: 100%;
+  .home{
+    background-image: url(./images/cover-mobile.png);
   }
 
   .home .image{
-    max-width: 100%;
+    max-width: 10%;
   }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+  
+
 }
