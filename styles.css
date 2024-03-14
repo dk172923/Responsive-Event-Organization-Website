@@ -540,7 +540,7 @@ iframe{
   background-image: url(./images/cover.jpg);
   margin-top: 60px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
 }
 /* Countdown Timer Section */
 .countdown-section {
@@ -609,6 +609,17 @@ iframe{
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+  }
+  .home {
+    position: relative;
+    width: 100vw; /* Set the width to the width of the viewport */
+    height: 30vh; /* Set the height to the height of the viewport */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-image: url(./images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
   }
   
 

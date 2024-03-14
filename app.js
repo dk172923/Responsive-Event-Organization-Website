@@ -18,7 +18,7 @@ toggleBtn.onclick = () => {
 window.onscroll = () => {
   menu.classList.remove("fa-times");
   navbar.classList.remove("active");
-  themeToggler.classList.remove("active");
+  //themeToggler.classList.remove("active");
 };
 
 /*document.querySelectorAll(".theme-toggler .theme-btn").forEach((btn) => {
